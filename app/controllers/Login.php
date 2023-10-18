@@ -13,30 +13,32 @@ class Login extends Controller{
 
     public function user()
     {
-        $username = $_POST('username');
-        $password = $_POST('passwrod');
-
-
-        if( !empty($username) || !empty($password)){
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+        
+        if( !empty($email) || !empty($password)){
             
-            if( $this->model('login_model')->cekUserTrue($username) > 0 ){
-                $data = $this->model('login_model')->ambilDataUser($username);
+            if( $this->model('login_model')->cekUserTrue($email) > 0 ){
+                $data = $this->model('login_model')->ambilDataUser($email);
                 $passwordDB = $data['password'];
+               // var_dump($email,$password, $passwordDB);
                 
-                if( password_verify($password, $passwordDB) ){
-                    $_SESSION['userLogin'] = 'userLogin';
-                    header('Location: '. BASEURL .'/home');
-
+                if( $password === $passwordDB) {
+                    $_SESSION['password'] = $passwordDB;
+                    // $_SESSION['userLogin'] = 'userLogin';
+                    header('Location: '. BASEURL .'/about');
+                    
                 }else{
                     echo 'password salah';
                 }
             }else{
+                header('Location: '. BASEURL .'/login');
                 echo 'Gagal menemukan User';
+                
             }
         }else{
             echo ' Masukan data terlebih dahulu';
         }
-
     }
 
 
