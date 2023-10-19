@@ -15,11 +15,11 @@
                     <div class="content-form">
                         <h2>Register Now</h2>
                         <p>Bergabung sekarang, nikmati penawaran eksklusif, dan belanja online dengan pengalaman terbaik bersama kami! </p>
-                        <form action="" method="post">
-                            <input type="text" class="name" name="name" placeholder="Enter Your Name" required>
+                        <form action="<?= BASEURL ?>/register/Tambahregister" method="post">
+                            <input type="text" class="name" name="username" placeholder="Enter Your Name" required>
                             <input type="email" class="email" name="email" placeholder="Enter Your Email" required>
                             <input type="password" class="password" name="password" placeholder="Enter Your Password" required>
-                            <input type="password" class="confirm-password" name="confirmpassword" placeholder="Enter Your Confirm Password" required>
+                            <!-- <input type="password" class="password" name="password" placeholder="Enter Your Confirm Password" required> -->
                             <button name="submit" class="btn" type="submit">Register</button>
                         </form>
                         <div class="social-icons">

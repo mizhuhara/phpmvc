@@ -6,8 +6,8 @@ class Database{
     private $db_name = DB_NAME;
 
 
-    private $dbh;
-    private $stmt;
+    private $dbh; //data base host
+    private $stmt; //statmen
 
  
     public function __construct()
@@ -64,6 +64,7 @@ class Database{
     {
         $this->execute();
         return $this->stmt->rowCount();
+        
     }
 
     // data banyak
@@ -80,6 +81,8 @@ class Database{
         $this->execute();
         return $this->stmt->fetch(PDO::FETCH_ASSOC);
     }
+
+
 
 
 }

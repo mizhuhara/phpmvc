@@ -26,7 +26,15 @@ class Login extends Controller{
                 if( $password === $passwordDB) {
                     $_SESSION['password'] = $passwordDB;
                     // $_SESSION['userLogin'] = 'userLogin';
-                    header('Location: '. BASEURL .'/about');
+                    // header('Location: '. BASEURL .'/about');
+                    $_SESSION['akses'] = $data['akses'];
+                    if($_SESSION['akses'] == 'admin'){
+                        
+                        header('Location: '. BASEURL .'/');
+                    }else{
+                        
+                        header('Location: '. BASEURL .'/about');
+                    }
                     
                 }else{
                     echo 'password salah';

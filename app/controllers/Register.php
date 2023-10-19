@@ -14,6 +14,15 @@ class Register extends Controller{
 
 
 
+    public function Tambahregister()
+    {
+        if( $this->model('register_model')->TambahDataRegister($_POST) > 0 ){
+            header('location:'. BASEURL . '/login');
+            exit;
+        }
+    }
+
+
 
 
 
