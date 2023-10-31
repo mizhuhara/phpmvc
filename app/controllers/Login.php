@@ -27,10 +27,12 @@ class Login extends Controller{
                     $_SESSION['password'] = $passwordDB;
                     // $_SESSION['userLogin'] = 'userLogin';
                     // header('Location: '. BASEURL .'/about');
+                    
                     $_SESSION['akses'] = $data['akses'];
                     if($_SESSION['akses'] == 'admin'){
                         
-                        header('Location: '. BASEURL .'/');
+                        header('Location: '. BASEURL .'/mahasiswa');
+                        
                     }else{
                         
                         header('Location: '. BASEURL .'/about');
@@ -49,8 +51,7 @@ class Login extends Controller{
         }
     }
 
-
-
+   
 }
 
 

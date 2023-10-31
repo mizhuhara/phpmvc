@@ -21,6 +21,10 @@ class register_model{
         return $this->db->rowCount();
     }
     
+    
+   
+
+
 
 
 

@@ -11,7 +11,4 @@ define('DB_NAME', 'phpmvc');
 
 
 
-
-
-
 ?>

@@ -9,7 +9,7 @@
 -->
 
 
-<body>
+
 
     <!-- form section start -->
     <section class="mockup-form">
@@ -37,4 +37,3 @@
         </div>
     </div>
 </div>
-      
