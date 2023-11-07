@@ -31,7 +31,7 @@ class Login extends Controller{
                     $_SESSION['akses'] = $data['akses'];
                     if($_SESSION['akses'] == 'admin'){
                         
-                        header('Location: '. BASEURL .'/mahasiswa');
+                        header('Location: '. BASEURL .'/barang');
                         
                     }else{
                         
@@ -51,7 +51,6 @@ class Login extends Controller{
         }
     }
 
-   
 }
 
 
