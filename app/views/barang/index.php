@@ -72,15 +72,38 @@
 
                     <div class="mb-3 form-group">
 
+<label for="penyimpanan" class="form-label">Penyimpanan</label>
+<select class="form-select" id="penyimpanan" name="penyimpanan" aria-label="Default select example">
+    <option value="3+32">3+32</option>
+    <option value="4+64">4+64</option>
+    <option value="4+128">4+128</option>
+    <option value="6+128">6+128</option>
+    <option value="6+128">8+128</option>
+    <option value="8+256">8+256</option>
+    <option value="12+256">12+256</option>
+    <option value="12+512">12+512</option>
+</select>
+
+</div>
+
+                    <div class="mb-3 form-group">
+
                         <label for="merek" class="form-label">Merek</label>
                         <select class="form-select" id="merek" name="merek" aria-label="Default select example">
-                            <option value="xiaomi">xiaomi</option>
-                            <option value="samsung">samsung</option>
+                            <option value="Xiaomi">xiaomi</option>
+                            <option value="Samsung">samsung</option>
+                            <option value="Vivo">Vivo</option>
                             <option value="oppo">oppo</option>
+                            <option value="Iphone">Iphone</option>
+                            <option value="Realme">Realme</option>
                         </select>
 
                     </div>
 
+                    <div class="mb-3 form-group">
+                        <label for="harga" class="form-label">Harga</label>
+                        <input type="text" class="form-control" id="harga" name="harga">
+                    </div>
 
                     <div class="mb-3 form-group">
                         <label for="stock" class="form-label">Stock</label>
