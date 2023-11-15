@@ -10,13 +10,13 @@ $(function () {
     $(".modal-footer button[type=submit]").html("Ubah Data");
     $(".modal-body form").attr(
       "action",
-      "http://localhost/phpmvc/public/mahasiswa/ubah"
+      "http://phpmvc.test/mahasiswa/ubah"
     );
 
     const id = $(this).data("id");
 
     $.ajax({
-      url: "http://localhost/PHPMVC/public/mahasiswa/getUbah",
+      url: "http://phpmvc.test/mahasiswa/getUbah",
       data: { id: id },
       method: "post",
       dataType: "json",
@@ -45,13 +45,13 @@ $(function barang() {
     $(".modal-footer button[type=submit]").html("Ubah Data");
     $(".modal-body form").attr(
       "action",
-      "http://localhost/phpmvc/public/barang/ubahBarang"
+      "http://phpmvc.test/barang/ubahBarang"
     );
     // Mengambil id_barang dari elemen yang sesuai, contoh menggunakan atribut data-id
     const id_barang = $(this).data("id");
 
     $.ajax({
-      url: "http://localhost/PHPMVC/public/barang/getUbahBarang",
+      url: "http://phpmvc.test/barang/getUbahBarang",
       data: { id_barang: id_barang }, // Menggunakan 'id_barang' sebagai nama indeks
       method: "post",
       dataType: "json",
@@ -61,7 +61,7 @@ $(function barang() {
         $("#merek").val(data.merek);
         $("#stock").val(data.stock);
         // $("#img").val(data.img);
-console.log(data.id_barang, data.img);
+
       },
     });
   });

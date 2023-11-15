@@ -30,14 +30,14 @@ class Barang_model{
         public function TambahDataBarang($data)
         {
 
-        $query = "INSERT INTO barang  VALUES ('',:namaBarang, :merek, :stock, :img)";
+            $query = "INSERT INTO barang (namaBarang, merek, stock, img) VALUES (:namaBarang, :merek, :stock, :img)";
         
         $this->db->query($query);
         
         $this->db->bind('namaBarang', $data['namaBarang']);
         $this->db->bind('merek', $data['merek']);
         $this->db->bind('stock', $data['stock']);
-        $this->db->bind('img', $data['img']);
+        $this->db->bind('img', $_FILES['img']['name']);
 
 
 

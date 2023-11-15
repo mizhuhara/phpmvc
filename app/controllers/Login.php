@@ -15,7 +15,14 @@ class Login extends Controller{
     {
         $email = $_POST['email'];
         $password = $_POST['password'];
-        
+
+    //     if (isset($_SESSION['id'])) {
+    //         if($_SESSION['akses'] === 'admin') {
+    //             header('Location: '. BASEURL .'/barang');
+    //     } else { 
+    //         header('Location: '. BASEURL );
+    //     }
+    // }
         if( !empty($email) || !empty($password)){
             
             if( $this->model('login_model')->cekUserTrue($email) > 0 ){
@@ -51,7 +58,44 @@ class Login extends Controller{
         }
     }
 
+
+
+public function logout()
+{
+    // Start or resume the session
+    session_start();
+
+    // Unset the session variables
+    unset($_SESSION['password']);
+    unset($_SESSION['akses']);
+
+    // Destroy the session
+    session_destroy();
+
+    // Redirect to the login page or any other appropriate page after logout
+    header('Location: ' . BASEURL . '/login');
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
 
 
 ?>

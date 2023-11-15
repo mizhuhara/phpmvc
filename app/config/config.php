@@ -1,6 +1,6 @@
 <?php
 
-define('BASEURL', 'http://localhost/PHPMVC/public' );
+define('BASEURL', 'http://phpmvc.test' );
 
 //database
 define('DB_HOST', 'localhost');

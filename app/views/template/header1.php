@@ -1,3 +1,27 @@
+
+
+<?php
+
+
+if ($_SESSION['akses'] !== 'admin') {
+    // If the 'user_id' session variable is not set or the 'level' is not 'admin', redirect to the login page
+    header('Location: ' . BASEURL . '/login');
+    exit(); // Terminate the script to prevent further execution
+}
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,12 +39,13 @@
 
     <div class="container">
       <a class="navbar-brand" href="<?= BASEURL; ?>">PHPMVC</a>
+      
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="<?= BASEURL; ?>">Log Out</a>
+          <a class="nav-link active" aria-current="page" href="<?= BASEURL; ?>/login/logout">Log Out</a>
 
 
         </div>
