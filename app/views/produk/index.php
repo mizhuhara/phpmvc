@@ -34,7 +34,7 @@
         <br>
         <p class="brand">Redmi Note 12</p>
         <p class="harga">2.300.000</p>
-        <img class="img-fluid" src="<?=BASEURL; ?>\img\redmi note 12.svg" alt="">
+        <img class="img-fluid" src="<?=BASEURL; ?>/img/redmi note 12.svg" alt="">
         <br><br>
         <button class="button px-2 py-1">Beli Sekarang</button>
         <br><br>
@@ -47,7 +47,7 @@
         <br>
         <p class="brand">Vivo V21</p>
         <p class="harga">3.800.000</p>
-        <img class="img-fluid" src="/image/vivo v21.svg" alt="">
+        <img class="img-fluid" src="<?=BASEURL; ?>/img/vivo v21.svg" alt="">
         <br><br>
         <button class="button px-2 py-1">Beli Sekarang</button>
         <br><br>
@@ -60,7 +60,7 @@
         <br>
         <p class="brand">Samsung s23</p>
         <p class="harga">8.999.000</p>
-        <img class="img-fluid" src="/image/samsung s23.svg" alt="">
+        <img class="img-fluid" src="<?=BASEURL; ?>/img/samsung s23.svg" alt="">
         <br><br>
         <button class="button px-2 py-1">Beli Sekarang</button>
         <br><br>
@@ -73,7 +73,7 @@
         <br>
         <p class="brand">Oppo Reno 8T</p>
         <p class="harga">4.799.000</p>
-        <img class="img-fluid" src="/image/oppo reno 8t.svg" alt="">
+        <img class="img-fluid" src="<?=BASEURL; ?>/img/oppo reno 8t.svg" alt="">
         <br><br>
         <button class="button px-2 py-1">Beli Sekarang</button>
         <br><br>
@@ -88,7 +88,7 @@
         <br>
         <p class="brand">Redmi 12</p>
         <p class="harga">1.999.000</p>
-        <img class="img-fluid" src="/image/redmi 12.svg" alt="">
+        <img class="img-fluid" src="<?=BASEURL; ?>/img/redmi 12.svg" alt="">
         <br><br>
         <button class="button px-2 py-1">Beli Sekarang</button>
         <br><br>
@@ -101,7 +101,7 @@
         <br>
         <p class="brand">Redmi Note 12 Pro</p>
         <p class="harga">3.699.000</p>
-        <img class="img-fluid" src="/image/redmi note 12 pro.svg" alt="">
+        <img class="img-fluid" src="<?=BASEURL; ?>/img/redmi note 12 pro.svg" alt="">
         <br><br>
         <button class="button px-2 py-1">Beli Sekarang</button>
         <br><br>
@@ -114,7 +114,7 @@
         <br>
         <p class="brand">Poco X5 5g</p>
         <p class="harga">3.300.000</p>
-        <img class="img-fluid" src="/image/Poco x5.svg" alt="">
+        <img class="img-fluid" src="<?=BASEURL; ?>/img/Poco x5.svg" alt="">
         <br><br>
         <button class="button px-2 py-1">Beli Sekarang</button>
         <br><br>
@@ -127,7 +127,7 @@
         <br>
         <p class="brand">Vivo T1 Pro 5g</p>
         <p class="harga">4.999.000</p>
-        <img class="img-fluid" src="/image/Vivo T1 Pro 5G.svg" alt="">
+        <img class="img-fluid" src="<?=BASEURL; ?>/img/Vivo T1 Pro 5G.svg" alt="">
         <br><br>
         <button class="button px-2 py-1">Beli Sekarang</button>
         <br><br>
@@ -142,7 +142,7 @@
         <br>
         <p class="brand">Redmi Note 12</p>
         <p class="harga">2.300.000</p>
-        <img class="img-fluid" src="/image/redmi note 12.svg" alt="">
+        <img class="img-fluid" src="<?=BASEURL; ?>/img/redmi note 12.svg" alt="">
         <br><br>
         <button class="button px-2 py-1">Beli Sekarang</button>
         <br><br>
@@ -155,7 +155,7 @@
         <br>
         <p class="brand">Vivo V21</p>
         <p class="harga">3.800.000</p>
-        <img class="img-fluid" src="/image/vivo v21.svg" alt="">
+        <img class="img-fluid" src="<?=BASEURL; ?>/img/vivo v21.svg" alt="">
         <br><br>
         <button class="button px-2 py-1">Beli Sekarang</button>
         <br><br>
@@ -168,7 +168,7 @@
         <br>
         <p class="brand">Samsung s23</p>
         <p class="harga">8.999.000</p>
-        <img class="img-fluid" src="/image/samsung s23.svg" alt="">
+        <img class="img-fluid" src="<?=BASEURL; ?>/img/samsung s23.svg" alt="">
         <br><br>
         <button class="button px-2 py-1">Beli Sekarang</button>
         <br><br>
@@ -181,7 +181,7 @@
         <br>
         <p class="brand">Oppo Reno 8T</p>
         <p class="harga">4.799.000</p>
-        <img class="img-fluid" src="/image/oppo reno 8t.svg" alt="">
+        <img class="img-fluid" src="<?=BASEURL; ?>/img/oppo reno 8t.svg" alt="">
         <br><br>
         <button class="button px-2 py-1">Beli Sekarang</button>
         <br><br>
@@ -196,7 +196,7 @@
         <br>
         <p class="brand">Redmi 12</p>
         <p class="harga">1.999.000</p>
-        <img class="img-fluid" src="/image/redmi 12.svg" alt="">
+        <img class="img-fluid" src="<?=BASEURL; ?>/img/redmi 12.svg" alt="">
         <br><br>
         <button class="button px-2 py-1">Beli Sekarang</button>
         <br><br>
@@ -209,7 +209,7 @@
         <br>
         <p class="brand">Redmi Note 12 Pro</p>
         <p class="harga">3.699.000</p>
-        <img class="img-fluid" src="/image/redmi note 12 pro.svg" alt="">
+        <img class="img-fluid" src="<?=BASEURL; ?>/img/redmi note 12 pro.svg" alt="">
         <br><br>
         <button class="button px-2 py-1">Beli Sekarang</button>
         <br><br>
@@ -222,7 +222,7 @@
         <br>
         <p class="brand">Poco X5 5g</p>
         <p class="harga">3.300.000</p>
-        <img class="img-fluid" src="/image/Poco x5.svg" alt="">
+        <img class="img-fluid" src="<?=BASEURL; ?>/img/Poco x5.svg" alt="">
         <br><br>
         <button class="button px-2 py-1">Beli Sekarang</button>
         <br><br>
@@ -235,7 +235,7 @@
         <br>
         <p class="brand">Vivo T1 Pro 5g</p>
         <p class="harga">4.999.000</p>
-        <img class="img-fluid" src="/image/Vivo T1 Pro 5G.svg" alt="">
+        <img class="img-fluid" src="<?=BASEURL; ?>/img/Vivo T1 Pro 5G.svg" alt="">
         <br><br>
         <button class="button px-2 py-1">Beli Sekarang</button>
         <br><br>
@@ -250,7 +250,7 @@
         <br>
         <p class="brand">Redmi 12</p>
         <p class="harga">1.999.000</p>
-        <img class="img-fluid" src="/image/redmi 12.svg" alt="">
+        <img class="img-fluid" src="<?=BASEURL; ?>/img/redmi 12.svg" alt="">
         <br><br>
         <button class="button px-2 py-1">Beli Sekarang</button>
         <br><br>
@@ -263,7 +263,7 @@
         <br>
         <p class="brand">Redmi Note 12 Pro</p>
         <p class="harga">3.699.000</p>
-        <img class="img-fluid" src="/image/redmi note 12 pro.svg" alt="">
+        <img class="img-fluid" src="<?=BASEURL; ?>/img/redmi note 12 pro.svg" alt="">
         <br><br>
         <button class="button px-2 py-1">Beli Sekarang</button>
         <br><br>
@@ -276,7 +276,7 @@
         <br>
         <p class="brand">Poco X5 5g</p>
         <p class="harga">3.300.000</p>
-        <img class="img-fluid" src="/image/Poco x5.svg" alt="">
+        <img class="img-fluid" src="<?=BASEURL; ?>/img/Poco x5.svg" alt="">
         <br><br>
         <button class="button px-2 py-1">Beli Sekarang</button>
         <br><br>
@@ -289,7 +289,7 @@
         <br>
         <p class="brand">Vivo T1 Pro 5g</p>
         <p class="harga">4.999.000</p>
-        <img class="img-fluid" src="/image/Vivo T1 Pro 5G.svg" alt="">
+        <img class="img-fluid" src="<?=BASEURL; ?>/img/Vivo T1 Pro 5G.svg" alt="">
         <br><br>
         <button class="button px-2 py-1">Beli Sekarang</button>
         <br><br>
@@ -304,7 +304,7 @@
         <br>
         <p class="brand">Redmi Note 12</p>
         <p class="harga">2.300.000</p>
-        <img class="img-fluid" src="/image/redmi note 12.svg" alt="">
+        <img class="img-fluid" src="<?=BASEURL; ?>/img/redmi note 12.svg" alt="">
         <br><br>
         <button class="button px-2 py-1">Beli Sekarang</button>
         <br><br>
@@ -317,7 +317,7 @@
         <br>
         <p class="brand">Vivo V21</p>
         <p class="harga">3.800.000</p>
-        <img class="img-fluid" src="/image/vivo v21.svg" alt="">
+        <img class="img-fluid" src="<?=BASEURL; ?>/img/vivo v21.svg" alt="">
         <br><br>
         <button class="button px-2 py-1">Beli Sekarang</button>
         <br><br>
@@ -330,7 +330,7 @@
         <br>
         <p class="brand">Samsung s23</p>
         <p class="harga">8.999.000</p>
-        <img class="img-fluid" src="/image/samsung s23.svg" alt="">
+        <img class="img-fluid" src="<?=BASEURL; ?>/img/samsung s23.svg" alt="">
         <br><br>
         <button class="button px-2 py-1">Beli Sekarang</button>
         <br><br>
@@ -343,7 +343,7 @@
         <br>
         <p class="brand">Oppo Reno 8T</p>
         <p class="harga">4.799.000</p>
-        <img class="img-fluid" src="/image/oppo reno 8t.svg" alt="">
+        <img class="img-fluid" src="<?=BASEURL; ?>/img/oppo reno 8t.svg" alt="">
         <br><br>
         <button class="button px-2 py-1">Beli Sekarang</button>
         <br><br>
@@ -358,7 +358,7 @@
         <br>
         <p class="brand">Redmi Note 12</p>
         <p class="harga">2.300.000</p>
-        <img class="img-fluid" src="/image/redmi note 12.svg" alt="">
+        <img class="img-fluid" src="<?=BASEURL; ?>/img/redmi note 12.svg" alt="">
         <br><br>
         <button class="button px-2 py-1">Beli Sekarang</button>
         <br><br>
@@ -371,7 +371,7 @@
         <br>
         <p class="brand">Vivo V21</p>
         <p class="harga">3.800.000</p>
-        <img class="img-fluid" src="/image/vivo v21.svg" alt="">
+        <img class="img-fluid" src="<?=BASEURL; ?>/img/vivo v21.svg" alt="">
         <br><br>
         <button class="button px-2 py-1">Beli Sekarang</button>
         <br><br>
@@ -384,7 +384,7 @@
         <br>
         <p class="brand">Samsung s23</p>
         <p class="harga">8.999.000</p>
-        <img class="img-fluid" src="/image/samsung s23.svg" alt="">
+        <img class="img-fluid" src="<?=BASEURL; ?>/img/samsung s23.svg" alt="">
         <br><br>
         <button class="button px-2 py-1">Beli Sekarang</button>
         <br><br>
@@ -397,7 +397,7 @@
         <br>
         <p class="brand">Oppo Reno 8T</p>
         <p class="harga">4.799.000</p>
-        <img class="img-fluid" src="/image/oppo reno 8t.svg" alt="">
+        <img class="img-fluid" src="<?=BASEURL; ?>/imge/oppo reno 8t.svg" alt="">
         <br><br>
         <button class="button px-2 py-1">Beli Sekarang</button>
         <br><br>
