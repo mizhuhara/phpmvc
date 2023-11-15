@@ -10,7 +10,7 @@ class register_model{
     }
     public function TambahDataRegister($data)
     {
-        $query = "INSERT INTO users  VALUES ('',:username, :email, :password, :akses)";
+        $query = "INSERT INTO users  VALUES (null,:username, :email, :password, :akses)";
         
         $this->db->query($query);
         
