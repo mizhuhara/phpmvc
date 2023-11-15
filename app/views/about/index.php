@@ -25,7 +25,7 @@
         </div>
         <div class="col">
             <div class="card">
-                <img src="img/NGR.jpg" class="card-img-top rounded-circle" alt="...">
+                <img src="<?= BASEURL; ?>/img/indra-oktovian.jpg" class="card-img-top rounded-circle" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Putu Bagus Indra Satya Apramada</h5>
                     <p class="card-text">Ganteng, kaya, baik hati, rajin menabung, dan punya pacar cantik</p>
