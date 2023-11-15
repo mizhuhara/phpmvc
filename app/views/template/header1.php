@@ -1,26 +1,12 @@
-
-
 <?php
 
 
 if ($_SESSION['akses'] !== 'admin') {
-    // If the 'user_id' session variable is not set or the 'level' is not 'admin', redirect to the login page
-    header('Location: ' . BASEURL . '/login');
-    exit(); // Terminate the script to prevent further execution
+  // If the 'user_id' session variable is not set or the 'level' is not 'admin', redirect to the login page
+  header('Location: ' . BASEURL . '/login');
+  exit(); // Terminate the script to prevent further execution
 }
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
 
 <head>
   <meta charset="UTF-8">
@@ -34,21 +20,14 @@ if ($_SESSION['akses'] !== 'admin') {
 </head>
 
 <body>
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-    <div class="container">
-      <a class="navbar-brand" href="<?= BASEURL; ?>">PHPMVC</a>
-      
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container d-flex justify-content-between">
+      <a class="navbar-brand" href="<?= BASEURL; ?>"><img src="<?= BASEURL; ?>/img/Logo.png" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="<?= BASEURL; ?>/login/logout">Log Out</a>
-
-
-        </div>
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="<?= BASEURL; ?>/login/logout">Log Out</a>
       </div>
     </div>
   </nav>
