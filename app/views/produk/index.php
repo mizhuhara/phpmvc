@@ -34,20 +34,20 @@
         <br>
         <p class="brand">Redmi Note 12</p>
         <p class="harga">2.300.000</p>
-        <img class="img-fluid" src="<?=BASEURL; ?>/img/redmi note 12.svg" alt="">
+        <img class="img-fluid" src="<?=BASEURL; ?>/img/redmi-note-12.jpg" alt="">
         <br><br>
         <button class="button px-2 py-1">Beli Sekarang</button>
         <br><br>
         <p class="spek">6+128 GB</p>
       </div>
-    </div>>
+    </div>
 
     <div class="card-wrapper col-2 mt-2">
       <div class="card-1 text-center">
         <br>
         <p class="brand">Vivo V21</p>
         <p class="harga">3.800.000</p>
-        <img class="img-fluid" src="<?=BASEURL; ?>/img/vivo v21.svg" alt="">
+        <img class="img-fluid" src="<?=BASEURL; ?>/img/vivo-v21.jpg" alt="">
         <br><br>
         <button class="button px-2 py-1">Beli Sekarang</button>
         <br><br>
