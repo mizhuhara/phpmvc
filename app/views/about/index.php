@@ -4,3 +4,4 @@
     <img src="<?= BASEURL; ?>/img/poto1.jpg" alt="Kazuya" width="200" class="rounded-circle">
     <p>Halo, nama saya <?= $data['nama']; ?>, saya adalah <?=$data['pekerjaan'];?>, umur saya <?=$data['umur'];?></p>
 </div>
+<p></p>
