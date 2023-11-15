@@ -58,7 +58,9 @@ $(function barang() {
       success: function (data) {
         $("#id_barang").val(data.id_barang);
         $("#namaBarang").val(data.namaBarang);
+        $("#penyimpanan").val(data.penyimpanan);
         $("#merek").val(data.merek);
+        $("#harga").val(data.harga);
         $("#stock").val(data.stock);
         // $("#img").val(data.img);
 

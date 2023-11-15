@@ -26,7 +26,9 @@ class Barang extends Controller
     {
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $namaBarang = $_POST['namaBarang'];
+            $penyimpanan = $_POST['penyimpanan'];
             $merek = $_POST['merek'];
+            $harga = $_POST['harga'];
             $stock = $_POST['stock'];
 
             // Cek apakah gambar diunggah
@@ -68,7 +70,9 @@ class Barang extends Controller
                     // Data barang beserta lokasi gambar
                     $data = [
                         'namaBarang' => $namaBarang,
+                        'penyimpanan' => $penyimpanan,
                         'merek' => $merek,
+                        'harga' => $harga,
                         'stock' => $stock,
                         'img' => $lokasi_simpan
                     ];
@@ -128,7 +132,9 @@ class Barang extends Controller
     {
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $namaBarang = $_POST['namaBarang'];
+            $penyimpanan = $_POST['penyimpanan'];
             $merek = $_POST['merek'];
+            $harga = $_POST['harga'];
             $stock = $_POST['stock'];
 
             // Cek apakah gambar diunggah
@@ -170,7 +176,9 @@ class Barang extends Controller
                     // Data barang beserta lokasi gambar
                     $data = [
                         'namaBarang' => $namaBarang,
+                        'penyimpanan' => $penyimpanan,
                         'merek' => $merek,
+                        'harga' => $harga,
                         'stock' => $stock,
                         'img' => $lokasi_simpan
                     ];

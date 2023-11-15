@@ -11,17 +11,20 @@
 </div>
 
 <?php foreach ($data['barang'] as $barang) : ?>
+
     <div class="container mt-5">
-        <div class="row">
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title"><?= $barang['namaBarang']; ?></h5>
-                    <h6 class="card-subtitle mb-2 text-muted"><?= $barang['merek']; ?></h6>
-                    <p class="card-text"><?= $barang['stock']; ?></p>
-                    <img class="card-text" src="<?= BASEURL ?>/img/gambar/<?= $barang['img']; ?>" alt="">
-                    <a href="<?= BASEURL; ?>/barang" class="card-link">Kembali</a>
-                </div>
+
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title"><?= $barang['namaBarang']; ?></h5>
+                <p class="card-subtitle mb-2 text-muted"><?= $barang['penyimpanan']; ?></p>
+                <p class="card-subtitle mb-2 text-muted"><?= $barang['merek']; ?></p>
+                <p class="card-subtitle mb-2 text-muted"><?= 'IDR ' . number_format($barang['harga'], 0, ',', '.')?></p>
+                <p>Stok : </p><p class="card-text"><?= $barang['stock']; ?></p>
+                <img class="card-text" src="<?= BASEURL ?>/PHPMVC/public/img/gambar/<?= $barang['img']; ?>" alt="">
+                <a href="<?= BASEURL; ?>/barang" class="card-link">Kembali</a>
             </div>
         </div>
+
     </div>
 <?php endforeach; ?>
