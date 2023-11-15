@@ -13,16 +13,15 @@
 <?php foreach ($data['barang'] as $barang) : ?>
 
     <div class="container mt-5">
-
         <div class="card" style="width: 18rem;">
+            
             <div class="card-body">
-                <h5 class="card-title"><?= $barang['namaBarang']; ?></h5>
-                <p class="card-subtitle mb-2 text-muted"><?= $barang['penyimpanan']; ?></p>
-                <p class="card-subtitle mb-2 text-muted"><?= $barang['merek']; ?></p>
-                <p class="card-subtitle mb-2 text-muted"><?= 'IDR ' . number_format($barang['harga'], 0, ',', '.')?></p>
-                <p>Stok : </p><p class="card-text"><?= $barang['stock']; ?></p>
-                <img class="card-text" src="<?= BASEURL ?>/PHPMVC/public/img/gambar/<?= $barang['img']; ?>" alt="">
-                <a href="<?= BASEURL; ?>/barang" class="card-link">Kembali</a>
+                <h5 class="card-title text-center text-capitalize"><?= $barang['namaBarang']; ?></h5>
+                <img src="<?= BASEURL ?>/PHPMVC/public/img/gambar/<?= $barang['img']; ?>" class="card-img-top" alt="...">
+                <p class="card-text"><?= $barang['penyimpanan']; ?></p>
+                <p class="card-text"><?= $barang['merek']; ?></p>
+                <p class="card-text"><?= 'IDR ' . number_format($barang['harga'], 0, ',', '.') ?></p>
+                <p>Stok : <?= $barang['stock']; ?></p>
             </div>
         </div>
 
