@@ -14,16 +14,14 @@
 
     <div class="container mt-5">
         <div class="card" style="width: 18rem;">
-            
             <div class="card-body">
                 <h5 class="card-title text-center text-capitalize"><?= $barang['namaBarang']; ?></h5>
-                <img src="<?= BASEURL ?>/PHPMVC/public/img/gambar/<?= $barang['img']; ?>" class="card-img-top" alt="...">
+                <img src="<?= BASEURL; ?>/PHPMVC/public/img/gambar/<?= $barang['img']; ?>" class="card-img-top" alt="...">
                 <p class="card-text"><?= $barang['penyimpanan']; ?></p>
                 <p class="card-text"><?= $barang['merek']; ?></p>
                 <p class="card-text"><?= 'IDR ' . number_format($barang['harga'], 0, ',', '.') ?></p>
                 <p>Stok : <?= $barang['stock']; ?></p>
             </div>
         </div>
-
     </div>
 <?php endforeach; ?>
