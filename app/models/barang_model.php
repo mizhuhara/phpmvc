@@ -23,6 +23,12 @@ class Barang_model{
             $this->db->bind('id_barang', $id);
             return $this->db->single();
         }
+        public function getBarangByMerek($merek)
+        {
+            $this->db->query('SELECT * FROM ' . $this->table . ' WHERE merek=:merek');
+            $this->db->bind('merek', $merek);
+            return $this->db->resultSet();
+        }
 
         // tambah data barang
 
