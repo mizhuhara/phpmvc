@@ -23,7 +23,7 @@ class Product extends Controller
 
     public function cari()
     {
-        $data['judul'] = 'Prosuk';
+        $data['judul'] = 'Produk';
         $data['barang'] = $this->model('barang_model')->cariDataProduk();
         $this->views('template/header',$data);
         $this->views('produk/index',$data);
