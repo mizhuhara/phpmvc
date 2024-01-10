@@ -1,11 +1,11 @@
-<section>
+<section class="pb-3">
   <div class="container mt-4">
     <div class="form-inline my-2 my-lg-0">
       <br>
       <br>
       <div class="d-flex justify-content-center">
         <div class="col-3">
-          <form class="" action="" method="POST">
+          <form class="px-3" action="" method="POST">
             <select class="form-select" id="merek" name="merek" aria-label="Default select example">
               <option value="ALL">ALL</option>
               <option value="Xiaomi">Xiaomi</option>
@@ -18,14 +18,14 @@
             <button class="btn btn-primary" type="submit">Filter</button>
           </form>
         </div>
-        <div class="col-3">
+        <div class="col-3 px-3">
           <select class="form-select" aria-label="Default select example">
             <option selected>Harga Tertinggi</option>
             <option value="1">Harga Terendah</option>
             <option value="2">Terbaru</option>
           </select>
         </div>
-        <div class="col-3">
+        <div class="col-3 px-3">
           <form action="<?= BASEURL; ?>/mahasiswa/cari" method="POST">
             <div class="input-group mb-3">
               <input type="text" class="form-control" placeholder="Cari..." id="keyword" autocomplete="off">
@@ -37,14 +37,11 @@
     </div>
   </div>
 </section>
-<br><br><br>
 <hr class="line">
-<section class="container-fluid">
-  <div class="main-hero row mt-5 px-4">
-
-
+<div class="container-fluid">
+  <div class="row mt-5">
     <?php foreach ($data['barang'] as $barang) : ?>
-      <div class="card-wrapper col-2 mt-2">
+      <div class="card-wrapper col-2 mt-2 mb-5">
         <div class="card-1 text-center">
           <br>
           <p class="brand"><?= $barang['namaBarang'] ?></p>
@@ -118,3 +115,4 @@
         <a>Indonesia / Indonesia</a>
       </div>
     </footer>
+  </div>
