@@ -26,9 +26,9 @@
           </select>
         </div>
         <div class="col-3 px-3">
-          <form action="<?= BASEURL; ?>/mahasiswa/cari" method="POST">
-            <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Cari..." id="keyword" autocomplete="off">
+          <form action="<?= BASEURL; ?>/Product/cari" method="POST">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Cari..." name="keyword" id="keyword" autocomplete="off">
               <button class="btn btn-primary" type="submit" id="tombolCari">Cari</button>
             </div>
           </form>
