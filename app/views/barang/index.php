@@ -32,7 +32,7 @@
 
                 <li class="list-group-item ">
                     <?= $barang['namaBarang']; ?>
-                    <a href="<?= BASEURL; ?>/barang/hapusBarang/<?= $barang['id_barang'] ?>" class="badge bg-danger float-end " onclick="return confirm('Yakin?') ">hapus <?= $barang['id_barang']?></a>
+                    <a href="<?= BASEURL; ?>/barang/hapusBarang/<?= $barang['id_barang'] ?>" class="badge bg-danger float-end " onclick="return confirm('Yakin?') ">hapus <?= $barang['id_barang'] ?></a>
                     <a href="<?= BASEURL; ?>/barang/ubahBarang/<?= $barang['id_barang'] ?>" class="badge bg-warning float-end tampilModelUbahBarang" data-bs-toggle="modal" data-bs-target="#formModalBarang" data-id="<?= $barang['id_barang']; ?>">Edit</a>
                     <a href="<?= BASEURL; ?>/barang/detailBarang/<?= $barang['id_barang'] ?>" class="badge bg-primary float-end  ">Detail</a>
                 </li>
@@ -72,19 +72,19 @@
 
                     <div class="mb-3 form-group">
 
-<label for="penyimpanan" class="form-label">Penyimpanan</label>
-<select class="form-select" id="penyimpanan" name="penyimpanan" aria-label="Default select example">
-    <option value="3+32">3+32</option>
-    <option value="4+64">4+64</option>
-    <option value="4+128">4+128</option>
-    <option value="6+128">6+128</option>
-    <option value="6+128">8+128</option>
-    <option value="8+256">8+256</option>
-    <option value="12+256">12+256</option>
-    <option value="12+512">12+512</option>
-</select>
+                        <label for="penyimpanan" class="form-label">Penyimpanan</label>
+                        <select class="form-select" id="penyimpanan" name="penyimpanan" aria-label="Default select example">
+                            <option value="3+32">3+32</option>
+                            <option value="4+64">4+64</option>
+                            <option value="4+128">4+128</option>
+                            <option value="6+128">6+128</option>
+                            <option value="6+128">8+128</option>
+                            <option value="8+256">8+256</option>
+                            <option value="12+256">12+256</option>
+                            <option value="12+512">12+512</option>
+                        </select>
 
-</div>
+                    </div>
 
                     <div class="mb-3 form-group">
 
@@ -112,12 +112,12 @@
 
 
                     <div class="mb-3 form-group">
-                    <label for="img" class="form-label">Image</label>
-                    <input type="file" class="form-control" id="img" name="img">
-                    
+                        <label for="img" class="form-label">Image</label>
+                        <input type="file" class="form-control" id="img" name="img">
+
                     </div>
 
-                
+
 
             </div>
             <div class="modal-footer">
