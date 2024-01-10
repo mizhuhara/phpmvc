@@ -1,22 +1,31 @@
 <?php
 
-class Product extends Controller{
+class Product extends Controller
+{
     public function index()
     {
         $data['judul'] = 'Product';
         $data['barang'] = $this->model('barang_model')->getAllBarang();
         if (isset($_POST['merek'])) {
             // var_dump($_POST['merek'] == 'ALL');
-            if($_POST['merek'] == 'ALL'){
+            if ($_POST['merek'] == 'ALL') {
                 $data['barang'] = $this->model('barang_model')->getAllBarang();
-
-            }else{
+            } else {
                 $merek = $_POST['merek'];
                 $data['barang'] = $this->model('barang_model')->getBarangByMerek($merek);
-
             }
         }
-        $this->views('template/header2',$data);
+
+        $this->views('template/header2', $data);
+        $this->views('produk/index', $data);
+        $this->views('template/footer');
+    }
+
+    public function cari()
+    {
+        $data['judul'] = 'Prosuk';
+        $data['barang'] = $this->model('barang_model')->cariDataProduk();
+        $this->views('template/header',$data);
         $this->views('produk/index',$data);
         $this->views('template/footer');
     }

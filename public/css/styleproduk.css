@@ -145,13 +145,6 @@ hr {
     border-radius: 24px;
 }
 
-
-.minmax {
-    width: 160px;
-    height: 50px;
-    border-radius: 24px;
-}
-
 .search {
     width: 400px;
     height: 50px;
@@ -161,9 +154,4 @@ hr {
 .nav-item>.nav-link {
     color: white;
     font-family: Poppins;
-}
-
-.left {
-    float: left;
-    margin-left: 50px;
 }

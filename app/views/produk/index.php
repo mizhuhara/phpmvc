@@ -1,12 +1,11 @@
 <section>
-  <div class="container mt-4 mx-3">
+  <div class="container mt-4">
     <div class="form-inline my-2 my-lg-0">
       <br>
       <br>
-      <div class="right d-flex">
-        <input class="search form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
-        <div class="">
-          <form action="" method="POST">
+      <div class="d-flex justify-content-center">
+        <div class="col-3">
+          <form class="" action="" method="POST">
             <select class="form-select" id="merek" name="merek" aria-label="Default select example">
               <option value="ALL">ALL</option>
               <option value="Xiaomi">Xiaomi</option>
@@ -16,16 +15,23 @@
               <option value="Iphone">Iphone</option>
               <option value="Realme">Realme</option>
             </select>
-            <button type="submit">Filter</button>
+            <button class="btn btn-primary" type="submit">Filter</button>
           </form>
-
         </div>
-        <div class="left ms-5">
-          <select class="minmax form-select ms-5" aria-label="Default select example">
+        <div class="col-3">
+          <select class="form-select" aria-label="Default select example">
             <option selected>Harga Tertinggi</option>
             <option value="1">Harga Terendah</option>
             <option value="2">Terbaru</option>
           </select>
+        </div>
+        <div class="col-3">
+          <form action="<? BASEURL; ?>/mahasiswa/cari" method="POST">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Cari..." id="keyword" autocomplete="off">
+              <button class="btn btn-primary" type="submit" id="tombolCari">Cari</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
