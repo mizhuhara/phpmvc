@@ -43,7 +43,7 @@
           <br>
           <p class="brand"><?= $barang['namaBarang'] ?></p>
           <p class="harga"><?= 'IDR ' . number_format($barang['harga'], 0, ',', '.') ?></p>
-          <img class="img-fluid img-thumbnail" src="<?= BASEURL; ?>/PHPMVC/public/img/gambar/<?= $barang['img'] ?>" alt="">
+          <img class="img-fluid" src="<?= BASEURL; ?>/PHPMVC/public/img/gambar/<?= $barang['img'] ?>" alt="">
           <br><br>
           <button class="button px-2 py-1">Beli Sekarang</button>
           <br><br>

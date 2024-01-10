@@ -16,7 +16,7 @@ class Product extends Controller{
 
             }
         }
-        $this->views('template/header',$data);
+        $this->views('template/header2',$data);
         $this->views('produk/index',$data);
         $this->views('template/footer');
     }

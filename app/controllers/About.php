@@ -7,7 +7,7 @@ class About extends Controller{
         $data ['pekerjaan'] = $pekerjaan;
         $data ['umur'] = $umur;
         $data ['judul'] = 'About';
-        $this -> views('template/header', $data);
+        $this -> views('template/header2', $data);
         $this -> views('about/index', $data);
         $this -> views('template/footer');
 
@@ -17,7 +17,7 @@ class About extends Controller{
     public function page()
     {
         $data ['judul'] ='Page';
-        $this -> views('template/header',$data);
+        $this -> views('template/header2',$data);
         $this -> views('about/page');
         $this -> views('template/footer');
 
