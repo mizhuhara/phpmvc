@@ -200,7 +200,7 @@
             <br>
             <hr>
             <br>
-            <p class="text">Selamat datang di Gadget Store, tempat yang Anda cari untuk memenuhi semua kebutuhan gadget dan smartphone Anda. Kami adalah lebih dari sekadar toko online; kami adalah mitra Anda dalam menjelajahi dunia teknologi yang cepat berubah. Di Gadget Store, kami berkomitmen untuk memberikan pengalaman belanja online yang tak tertandingi,
+            <p class="text fs-5">Selamat datang di Gadget Store, tempat yang Anda cari untuk memenuhi semua kebutuhan gadget dan smartphone Anda. Kami adalah lebih dari sekadar toko online; kami adalah mitra Anda dalam menjelajahi dunia teknologi yang cepat berubah. Di Gadget Store, kami berkomitmen untuk memberikan pengalaman belanja online yang tak tertandingi,
                menjadikan kami pilihan utama bagi pecinta teknologi dan mereka yang menginginkan produk berkualitas..</p>
         </div>
         <div class="col-4">
