@@ -42,7 +42,7 @@ class Login extends Controller{
                         
                     }else{
                         
-                        header('Location: '. BASEURL .'/about');
+                        header('Location: '. BASEURL .'/home');
                     }
                     
                 }else{
