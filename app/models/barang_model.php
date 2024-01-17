@@ -93,7 +93,7 @@ class Barang_model
 
     public function cariDataProduk(){
         $keyword = $_POST['keyword'];
-        $query = "SELECT * FROM barang WHERE merek LIKE :keyword";
+        $query = "SELECT * FROM barang WHERE namaBarang LIKE :keyword";
         $this->db->query($query);
         $this->db->bind('keyword', "%$keyword%");
         return $this->db->resultSet();

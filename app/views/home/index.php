@@ -36,7 +36,7 @@
     </div>
 
     </div>
-    <div class="w-100 d-flex justify-content-center">
+    <div class="w-100 d-flex justify-content-center align-item-center">
       <div class="keunggulan bg-white text-center" style="width: 680px; height: 120px;">
         <div class="row justify-content-center">
           <div class="unggulan col-md-12 d-inline-flex">
