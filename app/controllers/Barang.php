@@ -29,6 +29,12 @@ class Barang extends Controller
             $penyimpanan = $_POST['penyimpanan'];
             $merek = $_POST['merek'];
             $harga = $_POST['harga'];
+            $ukuran_layar = $_POST['ukuran_layar'];
+            $refresh_rate = $_POST['refresh_rate'];
+            $kamera_utama = $_POST['kamera_utama'];
+            $chipset = $_POST['chipset'];
+            $baterai = $_POST['baterai'];
+            $charger = $_POST['charger'];
             $stock = $_POST['stock'];
 
             // Cek apakah gambar diunggah
@@ -73,6 +79,12 @@ class Barang extends Controller
                         'penyimpanan' => $penyimpanan,
                         'merek' => $merek,
                         'harga' => $harga,
+                        'ukuran_layar' => $ukuran_layar,
+                        'refresh_rate' => $refresh_rate,
+                        'kamera_utama' => $kamera_utama,
+                        'chipset' => $chipset,
+                        'baterai' => $baterai,
+                        'charger' => $charger,
                         'stock' => $stock,
                         'img' => $lokasi_simpan
                     ];
@@ -135,6 +147,12 @@ class Barang extends Controller
             $penyimpanan = $_POST['penyimpanan'];
             $merek = $_POST['merek'];
             $harga = $_POST['harga'];
+            $ukuran_layar = $_POST['ukuran_layar'];
+            $refresh_rate = $_POST['refresh_rate'];
+            $kamera_utama = $_POST['kamera_utama'];
+            $chipset = $_POST['chipset'];
+            $baterai = $_POST['baterai'];
+            $charger = $_POST['charger'];
             $stock = $_POST['stock'];
 
             // Cek apakah gambar diunggah
@@ -179,6 +197,12 @@ class Barang extends Controller
                         'penyimpanan' => $penyimpanan,
                         'merek' => $merek,
                         'harga' => $harga,
+                        'ukuran_layar' => $ukuran_layar,
+                        'refresh_rate' => $refresh_rate,
+                        'kamera_utama' => $kamera_utama,
+                        'chipset' => $chipset,
+                        'baterai' => $baterai,
+                        'charger' => $charger,
                         'stock' => $stock,
                         'img' => $lokasi_simpan
                     ];

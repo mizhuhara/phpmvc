@@ -61,6 +61,12 @@ $(function barang() {
         $("#penyimpanan").val(data.penyimpanan);
         $("#merek").val(data.merek);
         $("#harga").val(data.harga);
+        $("#ukuran_layar").val(data.ukuran_layar);
+        $("#refresh_rate").val(data.refresh_rate);
+        $("#kamera_utama").val(data.kamera_utama);
+        $("#chipset").val(data.chipset);
+        $("#baterai").val(data.baterai);
+        $("#charger").val(data.charger);
         $("#stock").val(data.stock);
         // $("#img").val(data.img);
 

@@ -101,7 +101,7 @@
                                                 <td class="">
                                                     <a href="<?= BASEURL; ?>/barang/hapusBarang/<?= $barang['id_barang'] ?>" class="badge bg-danger float-start" onclick="return confirm('Yakin?') " style="height: 50px;"> <img src="./img/hapus.svg" alt="" class="mh-100 p-2" style="width: 50px; height: 50px;"></a>
 
-                                                    <a href="<?= BASEURL; ?>/barang/ubahBarang/<?= $barang['id_barang'] ?>" class="badge bg-warning float-end tampilModelUbahBarang" data-bs-toggle="modal" data-bs-target="#formModalBarang" data-id="<?= $barang['id_barang']; ?> style="height: 50px;><img src="./img/edit.svg" alt="" class="mh-100 p-2" style="width: 50px; height: 50px;"></a>
+                                                    <a href="<?= BASEURL; ?>/barang/ubahBarang/<?= $barang['id_barang'] ?>" class="badge bg-warning float-end tampilModelUbahBarang" data-bs-toggle="modal" data-bs-target="#formModalBarang" data-id="<?= $barang['id_barang']; ?> style=" height: 50px;><img src="./img/edit.svg" alt="" class="mh-100 p-2" style="width: 50px; height: 50px;"></a>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -116,7 +116,7 @@
                     <!-- Logout Modal-->
                     <!-- Modal -->
                     <div class="modal fade" id="formModalBarang" tabindex="-1" aria-labelledby="formModalBarang" aria-hidden="true">
-                        <div class="modal-dialog">
+                        <div class="modal-dialog modal-xl">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="formModalLabel">Tambah Data</h5>
@@ -127,51 +127,87 @@
                                     <form action="<?= BASEURL; ?>barang/tambahBarang" method="post" enctype="multipart/form-data">
                                         <!--  -->
                                         <input type="hidden" name="id_barang" id="id_barang">
-                                        <!--  -->
-                                        <div class="mb-3 form-group">
-                                            <label for="namaBarang" class="form-label">Nama Barang</label>
-                                            <input type="text" class="form-control" id="namaBarang" name="namaBarang">
+                                        <div class="row">
+                                            <!--  -->
+                                            <div class="col-sm-6 mb-3 form-group">
+                                                <label for="namaBarang" class="form-label">Nama Barang</label>
+                                                <input type="text" class="form-control" id="namaBarang" name="namaBarang">
+                                            </div>
+                                            <div class="col-sm-6 mb-3 form-group">
+                                                <label for="penyimpanan" class="form-label">Penyimpanan</label>
+                                                <select class="form-select" id="penyimpanan" name="penyimpanan" aria-label="Default select example">
+                                                    <option value="3+32">3+32</option>
+                                                    <option value="4+64">4+64</option>
+                                                    <option value="4+128">4+128</option>
+                                                    <option value="6+128">6+128</option>
+                                                    <option value="6+128">8+128</option>
+                                                    <option value="8+256">8+256</option>
+                                                    <option value="12+256">12+256</option>
+                                                    <option value="12+512">12+512</option>
+                                                </select>
+                                            </div>
                                         </div>
-                                        <div class="mb-3 form-group">
-                                            <label for="penyimpanan" class="form-label">Penyimpanan</label>
-                                            <select class="form-select" id="penyimpanan" name="penyimpanan" aria-label="Default select example">
-                                                <option value="3+32">3+32</option>
-                                                <option value="4+64">4+64</option>
-                                                <option value="4+128">4+128</option>
-                                                <option value="6+128">6+128</option>
-                                                <option value="6+128">8+128</option>
-                                                <option value="8+256">8+256</option>
-                                                <option value="12+256">12+256</option>
-                                                <option value="12+512">12+512</option>
-                                            </select>
+                                        <div class="row">
+                                            <div class="col-sm-6 mb-3 form-group">
+                                                <label for="merek" class="form-label">Merek</label>
+                                                <select class="form-select" id="merek" name="merek" aria-label="Default select example">
+                                                    <option value="Xiaomi">xiaomi</option>
+                                                    <option value="Samsung">samsung</option>
+                                                    <option value="Vivo">Vivo</option>
+                                                    <option value="oppo">oppo</option>
+                                                    <option value="Iphone">Iphone</option>
+                                                    <option value="Realme">Realme</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-6 mb-3 form-group">
+                                                <label for="harga" class="form-label">Harga</label>
+                                                <input type="text" class="form-control" id="harga" name="harga">
+                                            </div>
                                         </div>
-                                        <div class="mb-3 form-group">
-                                            <label for="merek" class="form-label">Merek</label>
-                                            <select class="form-select" id="merek" name="merek" aria-label="Default select example">
-                                                <option value="Xiaomi">xiaomi</option>
-                                                <option value="Samsung">samsung</option>
-                                                <option value="Vivo">Vivo</option>
-                                                <option value="oppo">oppo</option>
-                                                <option value="Iphone">Iphone</option>
-                                                <option value="Realme">Realme</option>
-                                            </select>
+                                        <div class="row">
+                                            <div class="col-sm-6 mb-3 form-group">
+                                                <label for="ukuran_layar" class="form-label">Ukuran Layar</label>
+                                                <input type="text" class="form-control" id="ukuran_layar" name="ukuran_layar">
+                                            </div>
+                                            <div class="col-sm-6 mb-3 form-group">
+                                                <label for="refresh_rate" class="form-label">Refresh Rate</label>
+                                                <input type="text" class="form-control" id="refresh_rate" name="refresh_rate">
+                                            </div>
                                         </div>
-                                        <div class="mb-3 form-group">
-                                            <label for="harga" class="form-label">Harga</label>
-                                            <input type="text" class="form-control" id="harga" name="harga">
+                                        <div class="row">
+                                            <div class="col-sm-6 mb-3 form-group">
+                                                <label for="kamera_utama" class="form-label">Kamera Utama</label>
+                                                <input type="text" class="form-control" id="kamera_utama" name="kamera_utama">
+                                            </div>
+                                            <div class="col-sm-6 mb-3 form-group">
+                                                <label for="chipset" class="form-label">Chipset</label>
+                                                <input type="text" class="form-control" id="chipset" name="chipset">
+                                            </div>
                                         </div>
-                                        <div class="mb-3 form-group">
-                                            <label for="stock" class="form-label">Stock</label>
-                                            <input type="number" class="form-control" id="stock" name="stock">
+                                        <div class="row">
+                                            <div class="col-sm-6 mb-3 form-group">
+                                                <label for="baterai" class="form-label">Baterai</label>
+                                                <input type="text" class="form-control" id="baterai" name="baterai">
+                                            </div>
+                                            <div class="col-sm-6 mb-3 form-group">
+                                                <label for="charger" class="form-label">Charger</label>
+                                                <input type="text" class="form-control" id="charger" name="charger">
+                                            </div>
                                         </div>
-                                        <div class="mb-3 form-group">
-                                            <label for="img" class="form-label">Image</label>
-                                            <input type="file" class="form-control" id="img" name="img">
+                                        <div class="row">
+                                            <div class="col-sm-6 mb-3 form-group">
+                                                <label for="stock" class="form-label">Stock</label>
+                                                <input type="number" class="form-control" id="stock" name="stock">
+                                            </div>
+                                            <div class="col-sm-6 mb-3 form-group">
+                                                <label for="img" class="form-label">Image</label>
+                                                <input type="file" class="form-control" id="img" name="img">
+                                            </div>
                                         </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                            <button type="submit" class="btn btn-primary">Save Data</button>
-                                        </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                <button type="submit" class="btn btn-primary">Save Data</button>
+                                            </div>
                                     </form>
                                 </div>
                             </div>
@@ -182,4 +218,3 @@
         </div>
     </div>
 </div>
-

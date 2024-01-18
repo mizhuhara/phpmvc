@@ -49,7 +49,7 @@
           <img class="img-fluid mw-100" style="width: auto; height: 200px;" src="<?= BASEURL; ?>/PHPMVC/public/img/gambar/<?= $barang['img'] ?>" alt="">
           <br><br>
           <!-- Button trigger modal -->
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <a href="" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detail<?= $barang['id_barang']?>">Beli Sekarang</a>
           </button>
 
