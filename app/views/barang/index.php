@@ -1,130 +1,185 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-<div class="container mt-3">
-
-
-    <div class="row">
-        <div class="col-lg-6">
-            <?php Flasher::flash(); ?>
-        </div>
-    </div>
-
-
-    <div class="row">
-        <div class="col-lg-6">
-
-
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary tambahDataBarang" data-bs-toggle="modal" data-bs-target="#formModalBarang">
-                Tambah Data
-            </button>
-
-            <br><br>
-
-
-
-
-            <h3>Daftar Barang</h3>
-        </div>
-
-        <ul class="list-group">
-            <?php foreach ($data['barang'] as $barang) : ?>
-
-                <li class="list-group-item ">
-                    <?= $barang['namaBarang']; ?>
-                    <a href="<?= BASEURL; ?>/barang/hapusBarang/<?= $barang['id_barang'] ?>" class="badge bg-danger float-end " onclick="return confirm('Yakin?') ">hapus <?= $barang['id_barang'] ?></a>
-                    <a href="<?= BASEURL; ?>/barang/ubahBarang/<?= $barang['id_barang'] ?>" class="badge bg-warning float-end tampilModelUbahBarang" data-bs-toggle="modal" data-bs-target="#formModalBarang" data-id="<?= $barang['id_barang']; ?>">Edit</a>
-                    <a href="<?= BASEURL; ?>/barang/detailBarang/<?= $barang['id_barang'] ?>" class="badge bg-primary float-end  ">Detail</a>
-                </li>
-
-            <?php endforeach; ?>
+<div class="">
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-dark sidebar sidebar-dark accordion" id="accordionSidebar">
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-laugh-wink"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">Gadget<sup>store</sup></div>
+            </a>
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+            <!-- Nav Item - Tables -->
+            <li class="nav-item active">
+                <a class="nav-link" href="tables.html">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Tables</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link active" aria-current="page" href="<?= BASEURL; ?>/login/logout">Log Out</a>
+                <i class="fas fa-fw fa-table"></i>
+            </li>
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
         </ul>
-
-
-
-    </div>
-
-</div>
-
-
-<!-- Modal -->
-<div class="modal fade" id="formModalBarang" tabindex="-1" aria-labelledby="formModalBarang" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="formModalLabel">Tambah Data</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-
-                <!--  -->
-                <form action="<?= BASEURL; ?>/barang/tambahBarang" method="post" enctype="multipart/form-data">
-
-                    <!--  -->
-                    <input type="hidden" name="id_barang" id="id_barang">
-
-                    <!--  -->
-
-                    <div class="mb-3 form-group">
-                        <label for="namaBarang" class="form-label">Nama Barang</label>
-                        <input type="text" class="form-control" id="namaBarang" name="namaBarang">
+        <!-- End of Sidebar -->
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+            <!-- Main Content -->
+            <div id="content">
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-dark topbar mb-4 static-top shadow">
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <form class="form-inline">
+                        <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                    </form>
+                    <!-- Topbar Search -->
+                    <button type="button" class="btn btn-primary tambahDataBarang" data-bs-toggle="modal" data-bs-target="#formModalBarang">
+                        Tambah Data
+                    </button>
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+                        <!-- Nav Item - Alerts -->
+                        <!-- Nav Item - Messages -->
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline t small">Kazuya</span>
+                                <img class="img-profile rounded-circle" src="./img/profile.svg">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <?php Flasher::flash(); ?>
                     </div>
+                </div>
+                <!-- End of Topbar -->
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+                    <!-- Page Heading -->
+                    <!-- DataTales Example -->
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead class="bg-dark text-white">
+                                        <tr>
+                                            <th class="text-center">Gambar</th>
+                                            <th class="text-center">Nama</th>
+                                            <th class="text-center">Merek</th>
+                                            <th class="text-center">Penyimpanan</th>
+                                            <th class="text-center">Harga</th>
+                                            <th class="text-center">Stock</th>
+                                            <th class="text-center">Aksi</th>
+                                        </tr>
+                                    </thead>
+                                    <?php foreach ($data['barang'] as $barang) : ?>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-center" style="width: 25%; height: 50px;"><img src="<?= BASEURL ?>PHPMVC/public/img/gambar/<?= $barang['img']; ?>" alt="Gambar Barang" class="mw-100" style="width: auto; height: 200px;"></td>
+                                                <td class="text-center"> <?= $barang['namaBarang']; ?></td>
+                                                <td class="text-center"><?= $barang['merek']; ?></td>
+                                                <td class="text-center"><?= $barang['penyimpanan'];?> GB</td>
+                                                <td class="text-center"><?= 'IDR ' . number_format($barang['harga'], 0, ',', '.') ?></td>
+                                                <td class="text-center"><?= $barang['stock']; ?></td>
+                                                <td class="">
+                                                    <a href="<?= BASEURL; ?>/barang/hapusBarang/<?= $barang['id_barang'] ?>" class="badge bg-danger float-start" onclick="return confirm('Yakin?') " style="height: 50px;"> <img src="./img/hapus.svg" alt="" class="mh-100 p-2" style="width: 50px; height: 50px;"></a>
 
-                    <div class="mb-3 form-group">
-
-                        <label for="penyimpanan" class="form-label">Penyimpanan</label>
-                        <select class="form-select" id="penyimpanan" name="penyimpanan" aria-label="Default select example">
-                            <option value="3+32">3+32</option>
-                            <option value="4+64">4+64</option>
-                            <option value="4+128">4+128</option>
-                            <option value="6+128">6+128</option>
-                            <option value="6+128">8+128</option>
-                            <option value="8+256">8+256</option>
-                            <option value="12+256">12+256</option>
-                            <option value="12+512">12+512</option>
-                        </select>
-
+                                                    <a href="<?= BASEURL; ?>/barang/ubahBarang/<?= $barang['id_barang'] ?>" class="badge bg-warning float-end tampilModelUbahBarang" data-bs-toggle="modal" data-bs-target="#formModalBarang" data-id="<?= $barang['id_barang']; ?> style="height: 50px;"><img src="./img/edit.svg" alt="" class="mh-100 p-2" style="width: 50px; height: 50px;"></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    <?php endforeach; ?>
+                                </table>
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="mb-3 form-group">
-
-                        <label for="merek" class="form-label">Merek</label>
-                        <select class="form-select" id="merek" name="merek" aria-label="Default select example">
-                            <option value="Xiaomi">xiaomi</option>
-                            <option value="Samsung">samsung</option>
-                            <option value="Vivo">Vivo</option>
-                            <option value="oppo">oppo</option>
-                            <option value="Iphone">Iphone</option>
-                            <option value="Realme">Realme</option>
-                        </select>
-
+                    <a class="scroll-to-top rounded" href="#page-top">
+                        <i class="fas fa-angle-up"></i>
+                    </a>
+                    <!-- Logout Modal-->
+                    <!-- Modal -->
+                    <div class="modal fade" id="formModalBarang" tabindex="-1" aria-labelledby="formModalBarang" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="formModalLabel">Tambah Data</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <!--  -->
+                                    <form action="<?= BASEURL; ?>barang/tambahBarang" method="post" enctype="multipart/form-data">
+                                        <!--  -->
+                                        <input type="hidden" name="id_barang" id="id_barang">
+                                        <!--  -->
+                                        <div class="mb-3 form-group">
+                                            <label for="namaBarang" class="form-label">Nama Barang</label>
+                                            <input type="text" class="form-control" id="namaBarang" name="namaBarang">
+                                        </div>
+                                        <div class="mb-3 form-group">
+                                            <label for="penyimpanan" class="form-label">Penyimpanan</label>
+                                            <select class="form-select" id="penyimpanan" name="penyimpanan" aria-label="Default select example">
+                                                <option value="3+32">3+32</option>
+                                                <option value="4+64">4+64</option>
+                                                <option value="4+128">4+128</option>
+                                                <option value="6+128">6+128</option>
+                                                <option value="6+128">8+128</option>
+                                                <option value="8+256">8+256</option>
+                                                <option value="12+256">12+256</option>
+                                                <option value="12+512">12+512</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3 form-group">
+                                            <label for="merek" class="form-label">Merek</label>
+                                            <select class="form-select" id="merek" name="merek" aria-label="Default select example">
+                                                <option value="Xiaomi">xiaomi</option>
+                                                <option value="Samsung">samsung</option>
+                                                <option value="Vivo">Vivo</option>
+                                                <option value="oppo">oppo</option>
+                                                <option value="Iphone">Iphone</option>
+                                                <option value="Realme">Realme</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3 form-group">
+                                            <label for="harga" class="form-label">Harga</label>
+                                            <input type="text" class="form-control" id="harga" name="harga">
+                                        </div>
+                                        <div class="mb-3 form-group">
+                                            <label for="stock" class="form-label">Stock</label>
+                                            <input type="number" class="form-control" id="stock" name="stock">
+                                        </div>
+                                        <div class="mb-3 form-group">
+                                            <label for="img" class="form-label">Image</label>
+                                            <input type="file" class="form-control" id="img" name="img">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="submit" class="btn btn-primary">Save Data</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="mb-3 form-group">
-                        <label for="harga" class="form-label">Harga</label>
-                        <input type="text" class="form-control" id="harga" name="harga">
-                    </div>
-
-                    <div class="mb-3 form-group">
-                        <label for="stock" class="form-label">Stock</label>
-                        <input type="number" class="form-control" id="stock" name="stock">
-                    </div>
-
-
-                    <div class="mb-3 form-group">
-                        <label for="img" class="form-label">Image</label>
-                        <input type="file" class="form-control" id="img" name="img">
-
-                    </div>
-
-
-
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-primary">Save Data</button>
-                </form>
+                </div>
             </div>
         </div>
     </div>
 </div>
+
+
