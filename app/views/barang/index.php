@@ -101,7 +101,7 @@
                                                 <td class="">
                                                     <a href="<?= BASEURL; ?>/barang/hapusBarang/<?= $barang['id_barang'] ?>" class="badge bg-danger float-start" onclick="return confirm('Yakin?') " style="height: 50px;"> <img src="./img/hapus.svg" alt="" class="mh-100 p-2" style="width: 50px; height: 50px;"></a>
 
-                                                    <a href="<?= BASEURL; ?>/barang/ubahBarang/<?= $barang['id_barang'] ?>" class="badge bg-warning float-end tampilModelUbahBarang" data-bs-toggle="modal" data-bs-target="#formModalBarang" data-id="<?= $barang['id_barang']; ?> style=" height: 50px;"><img src="./img/edit.svg" alt="" class="mh-100 p-2" style="width: 50px; height: 50px;"></a>
+                                                    <a href="<?= BASEURL; ?>/barang/ubahBarang/<?= $barang['id_barang'] ?>" class="badge bg-warning float-end tampilModelUbahBarang" data-bs-toggle="modal" data-bs-target="#formModalBarang" data-id="<?= $barang['id_barang']; ?> style="height: 50px;><img src="./img/edit.svg" alt="" class="mh-100 p-2" style="width: 50px; height: 50px;"></a>
                                                 </td>
                                             </tr>
                                         </tbody>
