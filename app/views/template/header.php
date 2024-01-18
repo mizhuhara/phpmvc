@@ -29,7 +29,6 @@
         <div class="navbar-nav">
           <a class="nav-link active" aria-current="page" href="<?= BASEURL; ?>">Home</a>
           <a class="nav-link" href="<?= BASEURL; ?>/Product">Produk</a>
-          <a class="nav-link" href="<?= BASEURL; ?>/About">About</a>
           <a class="nav-link" href="<?= BASEURL; ?>/Login">Login</a>
         </div>
       </div>

@@ -46,7 +46,7 @@
           <br>
           <p class="brand"><?= $barang['namaBarang'] ?></p>
           <p class="harga"><?= 'IDR ' . number_format($barang['harga'], 0, ',', '.') ?></p>
-          <img class="img-fluid" src="<?= BASEURL; ?>/PHPMVC/public/img/gambar/<?= $barang['img'] ?>" alt="">
+          <img class="img-fluid mw-100" style="width: auto; height: 200px;" src="<?= BASEURL; ?>/PHPMVC/public/img/gambar/<?= $barang['img'] ?>" alt="">
           <br><br>
           <!-- Button trigger modal -->
           <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
