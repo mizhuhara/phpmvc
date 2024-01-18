@@ -18,9 +18,10 @@
             <hr class="sidebar-divider">
             <!-- Nav Item - Tables -->
             <li class="nav-item active">
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="#">
                     <i class="fas fa-fw fa-table"></i>
-                    <span>Tables</span></a>
+                    <span>Database</span>
+                </a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link active" aria-current="page" href="<?= BASEURL; ?>/login/logout">Log Out</a>
@@ -94,13 +95,13 @@
                                                 <td class="text-center" style="width: 25%; height: 50px;"><img src="<?= BASEURL ?>PHPMVC/public/img/gambar/<?= $barang['img']; ?>" alt="Gambar Barang" class="mw-100" style="width: auto; height: 200px;"></td>
                                                 <td class="text-center"> <?= $barang['namaBarang']; ?></td>
                                                 <td class="text-center"><?= $barang['merek']; ?></td>
-                                                <td class="text-center"><?= $barang['penyimpanan'];?> GB</td>
+                                                <td class="text-center"><?= $barang['penyimpanan']; ?> GB</td>
                                                 <td class="text-center"><?= 'IDR ' . number_format($barang['harga'], 0, ',', '.') ?></td>
                                                 <td class="text-center"><?= $barang['stock']; ?></td>
                                                 <td class="">
                                                     <a href="<?= BASEURL; ?>/barang/hapusBarang/<?= $barang['id_barang'] ?>" class="badge bg-danger float-start" onclick="return confirm('Yakin?') " style="height: 50px;"> <img src="./img/hapus.svg" alt="" class="mh-100 p-2" style="width: 50px; height: 50px;"></a>
 
-                                                    <a href="<?= BASEURL; ?>/barang/ubahBarang/<?= $barang['id_barang'] ?>" class="badge bg-warning float-end tampilModelUbahBarang" data-bs-toggle="modal" data-bs-target="#formModalBarang" data-id="<?= $barang['id_barang']; ?> style="height: 50px;"><img src="./img/edit.svg" alt="" class="mh-100 p-2" style="width: 50px; height: 50px;"></a>
+                                                    <a href="<?= BASEURL; ?>/barang/ubahBarang/<?= $barang['id_barang'] ?>" class="badge bg-warning float-end tampilModelUbahBarang" data-bs-toggle="modal" data-bs-target="#formModalBarang" data-id="<?= $barang['id_barang']; ?> style=" height: 50px;"><img src="./img/edit.svg" alt="" class="mh-100 p-2" style="width: 50px; height: 50px;"></a>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -181,5 +182,3 @@
         </div>
     </div>
 </div>
-
-
