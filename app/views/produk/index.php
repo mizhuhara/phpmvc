@@ -48,12 +48,51 @@
           <p class="harga"><?= 'IDR ' . number_format($barang['harga'], 0, ',', '.') ?></p>
           <img class="img-fluid" src="<?= BASEURL; ?>/PHPMVC/public/img/gambar/<?= $barang['img'] ?>" alt="">
           <br><br>
-          <button class="button px-2 py-1">Beli Sekarang</button>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <a href="" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detail<?= $barang['id_barang']?>">Beli Sekarang</a>
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="detail<?= $barang['id_barang']?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <div class="d-flex  justify-content-center">
+                  <h5 class="modal-title " id="exampleModalLabel"><?= $barang['namaBarang']?></h5>
+                  </div>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body w-100">
+                  <div class="row">
+                    <div class="col-5 mt-2">
+                      <img class="img-fluid" src="<?= BASEURL; ?>/PHPMVC/public/img/gambar/<?= $barang['img'] ?>" alt="" class="mt-4">
+                      <button class="btn btn-warning mt-3">Stok : <?= $barang['stock']?> tersisa </button>
+                    </div>
+                    <div class="col">
+                      
+                      <p class="text-start">Kapasitas RAM dan ROM: <?= $barang['penyimpanan']?></p>
+                      <p class="text-start">Ukuran Layar : <?= $barang['ukuran_layar']?></p>
+                      <p class="text-start">Refresh Rate : <?= $barang['refresh_rate']?></p>
+                      <p class="text-start">Kamera utama : <?= $barang['kamera_utama']?></p>
+                      <p class="text-start">Chipset : <?= $barang['chipset']?></p>
+                      <p class="text-start">Baterai : <?= $barang['baterai']?></p>
+                      <p class="text-start">Pengisian Daya : <?= $barang['charger']?></p>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Beli Sekarang</button>
+                </div>
+              </div>
+            </div>
+          </div>
           <br><br>
           <p class="spek"><?= $barang['penyimpanan']; ?></p>
         </div>
       </div>
-    <?php endforeach; ?>
+    <?php endforeach  ; ?>
 
     <footer>
       <div class="container">
