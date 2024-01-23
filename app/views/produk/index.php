@@ -67,17 +67,17 @@
                   <div class="row">
                     <div class="col-5 mt-2">
                       <img class="img-fluid" src="<?= BASEURL; ?>/PHPMVC/public/img/gambar/<?= $barang['img'] ?>" alt="" class="mt-4">
-                      <button class="btn btn-warning mt-3">Stok : <?= $barang['stock']?> tersisa </button>
+                      <button class="btn btn-warning mt-3">Stok Tersisa: <?= $barang['stock']?></button>
                     </div>
                     <div class="col">
                       
-                      <p class="text-start">Kapasitas RAM dan ROM: <?= $barang['penyimpanan']?></p>
-                      <p class="text-start">Ukuran Layar : <?= $barang['ukuran_layar']?></p>
-                      <p class="text-start">Refresh Rate : <?= $barang['refresh_rate']?></p>
-                      <p class="text-start">Kamera utama : <?= $barang['kamera_utama']?></p>
+                      <p class="text-start">Kapasitas RAM dan ROM: <?= $barang['penyimpanan']?> GB</p>
+                      <p class="text-start">Ukuran Layar : <?= $barang['ukuran_layar']?> Inci</p>
+                      <p class="text-start">Refresh Rate : <?= $barang['refresh_rate']?> Hz</p>
+                      <p class="text-start">Kamera utama : <?= $barang['kamera_utama']?> MP</p>
                       <p class="text-start">Chipset : <?= $barang['chipset']?></p>
-                      <p class="text-start">Baterai : <?= $barang['baterai']?></p>
-                      <p class="text-start">Pengisian Daya : <?= $barang['charger']?></p>
+                      <p class="text-start">Baterai : <?= $barang['baterai']?> mAh</p>
+                      <p class="text-start">Pengisian Daya : <?= $barang['charger']?> Watt</p>
                     </div>
 
                   </div>
