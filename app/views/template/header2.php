@@ -29,7 +29,7 @@
         <div class="navbar-nav">
           <a class="nav-link active" aria-current="page" href="<?= BASEURL; ?>">Home</a>
           <a class="nav-link" href="<?= BASEURL; ?>/Product">Produk</a>
-          <a class="nav-link" aria-current="page" href="<?= BASEURL; ?>/login/logout">Log Out</a>
+          <a class="nav-link" aria-current="page" href="<?= BASEURL; ?>/login/logout">Login</a>
         </div>
       </div>
     </div>
